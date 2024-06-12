@@ -1,0 +1,902 @@
+<!--
+
+
+Hit RUN to see this project in action!
+
+
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/DSC_06831.jpg" alt="Revanth Mandadi" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Revanth Mandadi">Revanth Mandadi</h1>
+
+          <p class="title">ML Engineer</p>
+
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:rmandadi@usf.edu" class="contact-link">rmandadi@usf.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+1 (623) 272-3433</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1999-09-27">Sep 27, 1999</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Tampa, Florida, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/revanthmandadi" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+
+
+          <li class="social-item">
+            <a href="https://github.com/rmandadi1793" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Machine Learning and cloud Engineer from Tampa, USA, Studying Masters in Business Analytics and
+            Information Systems with a focus on leveraging technology to address business challenges and create
+            impactful solutions. With multiple Azure certifications, I have demonstrated my proficiency and interest in
+            cloud technologies, especially in the area of MLOps.
+            I enjoy
+            turning complex problems into simple, beautiful and intuitive solutions.
+          </p>
+
+          <p>
+            My job is to build your solutions so that it is functional and user-friendly but at the same time
+            attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way.
+          </p>
+        </section>
+
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+          <h3 class="h3 service-title">What I'm doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/istockphoto-1452604857-1024x1024.jpg" alt="Machine learning icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning</h4>
+                <p class="service-item-text">
+                  Advanced machine learning solutions to enhance business intelligence and automation.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of south Florida</h4>
+
+              <span>Fall 2023 - Spring 2025</span>
+
+              <p class="timeline-text">
+                Business Analytics And Information Systems
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">PVPSIT</h4>
+
+              <span>2017 - 2021</span>
+
+              <p class="timeline-text">
+                Electrical and Electronics Engineering
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SSRV Mandir</h4>
+
+              <span>2012 - 2015</span>
+
+              <p class="timeline-text">
+                High School
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Junior Software Engineer</h4>
+
+              <span>NOV 2021 — JUL 2023</span>
+
+              <p class="timeline-text">
+                Architected and refined Java-based insurance applications using Spring Boot and Hibernate, achieving a
+                15% increase in system modularity and operational efficiency.
+                Developed and seamlessly integrated ten RESTful APIs with third-party insurance systems, significantly
+                enhancing data exchange and boosting system performance. Adoption of DevOps and Agile methodologies to
+                facilitate CI/CD processes, resulting in a 40% reduction in production time through strategic use of
+                GitLab.Collaborated with three senior architects to design and implement over 15 tailored technical
+                solutions, effectively managing 20+ critical operational tasks and support requests, enhancing system
+                reliability and responsiveness.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Full Stack Engineering Intern</h4>
+
+              <span>FEB 21 — JUL 21</span>
+
+              <p class="timeline-text">
+                Implemented and enhanced web applications using Angular and Java Spring Boot, integrating five RESTful
+                APIs that supported
+                50,000 daily transactions, thereby improving backend response times by 20%.
+                • Enhanced UI design using Angular Material, increasing user satisfaction by 15%. Improved application
+                reactivity and data
+                management with Angular's RxJS and NgRx and created reusable components and directives.
+                • Collaborated with a team of six to manage over 800 code commits, ensuring continuous integration and
+                high code quality.
+                • Boosted application security by implementing JWT for secure authentication and role-based
+                authorization, enhancing data
+                protection and user access control.
+
+              </p>
+
+            </li>
+
+
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Database: PostgreSQL, MYSQL</h5>
+
+              </div>
+
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Programming Languages: Java, Python, R</h5>
+
+              </div>
+
+
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Visualization Tools: Tableau, Power BI</h5>
+
+              </div>
+
+
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Development Tools: Git, R studio, Jupyter notebook, Kubernetes, Terraform, GIT Lab</h5>
+
+              </div>
+
+
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Additional Skills: Agile (Scrum), ETL, Linux, Jira, MS 365</h5>
+
+              </div>
+
+
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <section class="Certification">
+
+          <h3 class="h3 Certification-title">Certifications</h3>
+
+          <ul class="Certificates-list content-card">
+
+            <li class="certificates-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Azure DevOps Engineer Expect, Azure Administrator Associate, Azure Fundamentals</h5>
+
+              </div>
+            </li>
+
+          </ul>
+
+
+        </section>
+
+
+        <section class="download">
+          <h3 class="h3 download-title">Download My Resume</h3>
+          <a href="./assets/Revanth SDE Resume.pdf" download class="download-link">Download Resume</a>
+        </section>
+
+
+
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Data Science</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Data Analysis</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Data Science</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Data Analysis</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/greeshmaN0810/Assignment03" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Plant Management System.png" alt="Plant Management System" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Plant Management System</h3>
+
+                <p class="project-category">Web development</p>
+                <div class="project-description">
+                  <h4>Overview:</h4>
+                  <p>
+                    The Plant Management System is a sophisticated online application engineered to enhance operational
+                    management for industrial plants. It integrates a robust backend and responsive front-end design,
+                    showcasing my skills in full-stack development and cloud architecture to improve system performance
+                    and user experience.
+                  </p>
+                  <h4>Technical Aspects:</h4>
+                  <p>
+                    Developed to be scalable and secure, the system supports a high volume of simultaneous user
+                    interactions and complex data processing tasks without compromising performance. It employs modern
+                    cloud technologies to ensure reliability and efficiency in real-time data handling and process
+                    management.
+                  </p>
+                  <h4>Business Value:</h4>
+                  <p>
+                    This application significantly increases operational efficiency by centralizing control and
+                    automating routine management tasks. It aids in reducing operational costs, enhances compliance with
+                    regulatory standards, and improves risk management through proactive alerts and real-time
+                    monitoring. The system's design ensures that it can adapt to growing operational demands while
+                    maintaining high levels of security and data integrity.
+                  </p>
+                </div>
+
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Data Science">
+              <a href="https://github.com/revanths4/Data-Mining-Project" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Caravan Cover Connect.png" alt="Caravan Cover Connect" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Caravan Cover Connect</h3>
+
+                <p class="project-category">Data Science</p>
+                <div class="project-description">
+                  <h4>Overview:</h4>
+                  <p>
+                    Caravan Cover Connect leverages a vast dataset of 86 customer variables, including demographics and
+                    policy details, to predict the likelihood of purchasing caravan insurance through the application of
+                    machine learning techniques. This project is tailored to demonstrate the practical application of
+                    predictive analytics in a business setting.
+                  </p>
+                  <h4>Technical Aspects:</h4>
+                  <p>
+                    Utilizing Python and R, the project involves sophisticated machine learning classification models,
+                    extensive data cleaning, and rigorous data analysis. My approach showcases proficiency in handling
+                    large datasets and generating actionable insights that are pivotal for data-driven decision-making
+                    in marketing strategies.
+
+                  </p>
+                  <h4>Business Value:</h4>
+                  <p>
+                    The predictive models help businesses identify potential buyers with higher accuracy, optimizing
+                    marketing efforts and increasing return on investment. By understanding customer propensities,
+                    companies can enhance targeted marketing, improve customer engagement, and strategically allocate
+                    resources, thereby boosting overall business efficiency and profitability.
+                  </p>
+                </div>
+
+
+              </a>
+            </li>
+
+
+
+            <li class="project-item  active" data-filter-item data-category="Data Analysis">
+              <a href="https://github.com/rmandadi1793/International-Debt-Analysis" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/International Debt Analysis.jpg" alt="International Debt Statistics"
+                    loading="lazy">
+                </figure>
+
+                <h3 class="project-title">International Debt Statistics</h3>
+
+                <p class="project-category">Data Analysis</p>
+                <div class="project-description">
+                  <h4>Overview:</h4>
+                  <p>
+                    This project delves into the PPG bilateral debt data between India and its neighboring countries,
+                    including Bangladesh, Bhutan, Sri Lanka, Nepal, Maldives, and Myanmar. Utilizing the World Bank API,
+                    the project retrieves data for the past 20 years, focusing on the trends and patterns of bilateral
+                    lending.
+                  </p>
+                  <h4>Technical Aspects:</h4>
+                  <p>
+                    The script developed in Python automates the process of data extraction from the World Bank's
+                    database, handling data for six different countries. The data is then cleaned, wrangled, and
+                    analyzed to assess the lending trends over the years. The results are visualized using Excel
+                    dashboards, providing a clear and comprehensive view of the lending dynamics.
+                  </p>
+                  <h4>Business Value:</h4>
+                  <p>
+                    This analysis offers valuable insights into the fiscal relationships and dependency dynamics between
+                    India and its neighbors. It supports policymakers and financial analysts in understanding the impact
+                    of bilateral debts and aids in making informed decisions regarding future lending strategies and
+                    economic aid.
+                  </p>
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://www.gsb.stanford.edu/faculty-research/case-studies/human-centered-artificial-intelligence-workforce-displacement/"
+                target="_blank"">
+
+                <figure class=" blog-banner-box">
+                <img src="./assets/images/Blog Image.jpg"
+                  alt="Human-Centered Artificial Intelligence and Workforce Displacement" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Technology</p>
+
+                    <span class="dot"></span>
+
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Human-Centered Artificial Intelligence and Workforce Displacement</h3>
+
+                  <p class="blog-text">
+                    In the realm of artificial intelligence, it is clear that our capacity to include AI in a way that
+                    upholds and strengthens human responsibilities will determine the direction of data analytics in the
+                    future. This viewpoint serves as both a professional interest and a compass for future activities
+                    for someone with a strong interest in business analytics and information systems. My objective is
+                    clear: I must responsibly and ethically utilize AI's capabilities to ensure that it enhances human
+                    endeavors and advances society and the economy.
+
+                  </p>
+
+                   <p class="blog-text">
+                      While considering the AI's impact on job roles aligns with my goal to ethically integrate AI in
+                      business, while ensuring technology enhances rather than replaces human capabilities. I can better plan for my
+                      future and adjust to the changing IT scene by being aware of these dynamics. I will base my creation of AI
+                      solutions that support human-centered values on the concepts that were mentioned. Using this strategy will
+                      improve my workforce development and ethical AI practices contributions. 
+                   </p>
+
+
+
+                </div>
+
+              </a>
+            </li>
+
+
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d451698.9196138102!2d-82.62037606470708!3d27.96415723577602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b783b3b9c10b%3A0x9852826d1d173b8b!2sTampa%2C%20FL%2C%20USA!5e0!3m2!1sen!2sbd!4v1655913861656!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
